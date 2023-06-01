@@ -1,0 +1,22 @@
+Difference between var and let:
+
+var has function scope or global scope, while let has block scope.
+Variables declared with var are hoisted to the top of their scope, allowing them to be accessed before they are declared. let variables are not hoisted and cannot be accessed before they are declared.
+var variables can be redeclared and reassigned within their scope, while let variables cannot be redeclared but can be reassigned within their block scope.
+
+Difference between var and const:
+
+var has function scope or global scope, while const has block scope.
+Variables declared with var are hoisted, while const variables are not hoisted.
+var variables can be redeclared and reassigned, while const variables cannot be redeclared and are read-only (their value cannot be changed once assigned).
+
+Difference between let and const:
+
+Both let and const have block scope.
+let variables can be reassigned within their block scope, while const variables are read-only and cannot be reassigned after they are assigned a value.
+let variables can be declared without an initial value, while const variables must be assigned an initial value when declared.
+
+Hoisting: Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that you can access variables and functions before they are declared in the code.However, it's important to note that only the declarations are hoisted, not the initializations. In the case of variables declared with var, their declarations are hoisted but initialized with a value of undefined until the actual assignment is encountered in the code. This can sometimes lead to unexpected behavior or bugs if not understood properly.
+
+
+
